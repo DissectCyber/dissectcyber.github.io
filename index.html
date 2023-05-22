@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=SF Pro:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="explaincopy" data-animate-on-scroll>
+      <div class="the-website-address">
+        The website address you shared to Gnat Cleaner is copied to your
+        clipboard.
+      </div>
+      <b class="why-would-i">Why would I use COPY?</b>
+      <div class="you-might-be-container">
+        <p class="you-might-be">
+          You might be writing a document and want to paste in a clean link
+          without trackers.
+        </p>
+        <p class="you-might-be">&nbsp;</p>
+        <p class="you-might-be">
+          Or you might want to paste the link into a personal list you keep in
+          something like Notes.
+        </p>
+        <p class="you-might-be">&nbsp;</p>
+        <p class="you-might-be">
+          Or you might prefer COPY, and then paste - instead of using the
+          sharing menu.
+        </p>
+        <p class="you-might-be">&nbsp;</p>
+        <p class="you-might-be">
+          <b
+            >You should feel free to do whatever is easy for you, and we support
+            that.</b
+          >
+        </p>
+      </div>
+      <b class="when-you-tap">When you tap COPY…</b>
+      <button
+        class="close-button"
+        id="drawercloseButton"
+        data-animate-on-scroll
+      >
+        <img class="oval-icon" alt="" src="./public/oval.svg" />
+
+        <div class="symbol">􀅾</div>
+      </button>
+    </div>
+
+    <script>
+      var drawercloseButton = document.getElementById("drawercloseButton");
+      if (drawercloseButton) {
+        drawercloseButton.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
