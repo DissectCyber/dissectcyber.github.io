@@ -1007,7 +1007,7 @@
   font-size: var(--font-size-xl);
   text-align: center;
 }
-.oval-icon4 {
+.oval-icon1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1020,17 +1020,17 @@
   overflow: hidden;
   max-height: 100%;
 }
-.symbol12 {
+.symbol9 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
   font-size: var(--font-size-base);
   font-weight: 600;
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-inter);
   color: var(--color-white);
   text-align: left;
 }
-.close-button4 {
+.close-button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -1042,7 +1042,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button4.animate {
+.close-button1.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explaincopy {
@@ -1056,7 +1056,7 @@
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-white);
-  font-family: var(--font-helvetica-neue);
+  font-family: var(--font-inter);
 }
 .explaincopy.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;

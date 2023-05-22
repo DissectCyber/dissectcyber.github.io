@@ -44,15 +44,14 @@
   display: inline-block;
   height: 14rem;
 }
-.when-would-i1 {
+.when-would-i {
   position: absolute;
   top: calc(50% - 32.5px);
   left: 2.88rem;
   font-size: var(--font-size-9xl);
-  font-family: var(--font-helvetica-neue);
   text-align: center;
 }
-.oval-icon2 {
+.oval-icon3 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -65,17 +64,17 @@
   overflow: hidden;
   max-height: 100%;
 }
-.symbol10 {
+.symbol11 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
   font-size: var(--font-size-base);
   font-weight: 600;
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-inter);
   color: var(--color-white);
   text-align: left;
 }
-.close-button2 {
+.close-button3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -87,7 +86,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button2.animate {
+.close-button3.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explainopen {
@@ -101,7 +100,7 @@
   text-align: left;
   font-size: var(--font-size-5xl);
   color: var(--color-white);
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-inter);
 }
 .explainopen.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;

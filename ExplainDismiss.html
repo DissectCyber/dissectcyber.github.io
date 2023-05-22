@@ -5,39 +5,10 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./ExplainDismiss.css" />
-
-    <style>
-      @font-face {
-        :font-family: "SF Pro";
-        src: url("SF-Pro.ttf");
-        font-weight: 300;
-      }
-      @font-face {
-        :font-family: "SF Pro";
-        src: url("SF-Pro.ttf");
-        font-weight: 400;
-      }
-      @font-face {
-        :font-family: "SF Pro";
-        src: url("SF-Pro-Text-Semibold.otf");
-        font-weight: 600;
-      }
-      @font-face {
-        :font-family: "SF Pro";
-        src: url("SF-Pro-Text-Semibold.otf");
-        font-weight: 700;
-      }
-      @font-face {
-        :font-family: "Helvetica Neue";
-        src: url("HelveticaNeue.ttf");
-        font-weight: 400;
-      }
-      @font-face {
-        :font-family: "Helvetica Neue";
-        src: url("HelveticaNeue.ttf");
-        font-weight: 700;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    />
   </head>
   <body>
     <div class="explaindismiss" data-animate-on-scroll>
@@ -49,15 +20,15 @@
         Let’s say you changed your mind and you don’t want to use the clean link
         right now. You just want to start over or do something different.
       </div>
-      <b class="when-would-i">When would I use DISMISS?</b>
+      <b class="when-would-i1">When would I use DISMISS?</b>
       <button
-        class="close-button1"
+        class="close-button4"
         id="drawercloseButton"
         data-animate-on-scroll
       >
-        <img class="oval-icon1" alt="" src="./public/oval1.svg" />
+        <img class="oval-icon4" alt="" src="./public/oval1.svg" />
 
-        <div class="symbol9">􀅾</div>
+        <div class="symbol12">􀅾</div>
       </button>
     </div>
 
@@ -101,6 +72,6 @@
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-    </script>
+
   </body>
 </html>

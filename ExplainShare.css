@@ -39,7 +39,7 @@
   left: 3rem;
   display: inline-block;
 }
-.oval-icon3,
+.oval-icon2,
 .screen-shot-2023-05-21-at-139 {
   position: absolute;
   width: 100%;
@@ -53,24 +53,24 @@
   height: 8rem;
   object-fit: cover;
 }
-.oval-icon3 {
+.oval-icon2 {
   height: 100%;
   top: 0;
   bottom: 0;
   border-radius: 50%;
   max-height: 100%;
 }
-.symbol11 {
+.symbol10 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
   font-size: var(--font-size-base);
   font-weight: 600;
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-inter);
   color: var(--color-white);
   text-align: left;
 }
-.close-button3 {
+.close-button2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -82,7 +82,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button3.animate {
+.close-button2.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explainshare {
@@ -96,7 +96,7 @@
   text-align: left;
   font-size: var(--font-size-5xl);
   color: var(--color-white);
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-inter);
 }
 .explainshare.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;
