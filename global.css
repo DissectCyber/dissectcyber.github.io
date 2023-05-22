@@ -3,18 +3,44 @@ body {
   line-height: normal;
 }
 
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 :root {
   /* fonts */
   --font-sf-pro: "SF Pro";
   --font-helvetica-neue: "Helvetica Neue";
 
   /* font sizes */
-  --font-size-base: 1rem;
   --font-size-xl: 1.25rem;
-  --font-size-sm: 0.88rem;
+  --font-size-mid: 1.06rem;
+  --font-size-base: 1rem;
+  --font-size-2xs: 0.69rem;
+  --font-size-mini: 0.94rem;
   --font-size-5xl: 1.5rem;
+  --font-size-20xl: 2.44rem;
+  --font-size-sm: 0.88rem;
+  --font-size-9xl: 1.75rem;
 
   /* Colors */
   --color-darkslategray: #363434;
+  --color-dodgerblue: #0a84ff;
+  --color-gray-100: rgba(255, 255, 255, 0.25);
+  --color-gray-200: rgba(0, 0, 0, 0);
+  --color-gainsboro-100: rgba(217, 217, 217, 0.3);
   --color-white: #fff;
+  --color-slategray: rgba(116, 116, 128, 0.18);
+  --color-dimgray: rgba(84, 84, 88, 0.65);
+
+  /* border radiuses */
+  --br-sm: 14px;
+  --br-xs: 12px;
+  --br-5xs-5: 7.5px;
 }

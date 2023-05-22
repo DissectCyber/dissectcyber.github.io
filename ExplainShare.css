@@ -29,7 +29,7 @@
   position: absolute;
   top: 1.25rem;
   left: calc(50% - 107px);
-  font-size: 2.44rem;
+  font-size: var(--font-size-20xl);
   text-align: center;
 }
 .this-time-dont-container {
@@ -60,7 +60,7 @@
   border-radius: 50%;
   max-height: 100%;
 }
-.symbol1 {
+.symbol9 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);

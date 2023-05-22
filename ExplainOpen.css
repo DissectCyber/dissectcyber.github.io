@@ -1,0 +1,108 @@
+@keyframes roll-in-left {
+  0% {
+    transform: translateX(-50px) rotate(-540deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.opens-the-clean {
+  position: absolute;
+  width: calc(100% - 94px);
+  top: calc(50% - 191.5px);
+  left: 3rem;
+  display: inline-block;
+}
+.tap-open {
+  position: absolute;
+  top: 1.25rem;
+  left: calc(50% - 103px);
+  font-size: var(--font-size-20xl);
+  text-align: center;
+}
+.a-friend-sends {
+  margin: 0;
+}
+.a-friend-sends-container {
+  position: absolute;
+  width: calc(100% - 105px);
+  bottom: 2.06rem;
+  left: 3.31rem;
+  font-size: 1.38rem;
+  display: inline-block;
+  height: 14rem;
+}
+.when-would-i1 {
+  position: absolute;
+  top: calc(50% - 32.5px);
+  left: 2.88rem;
+  font-size: var(--font-size-9xl);
+  font-family: var(--font-helvetica-neue);
+  text-align: center;
+}
+.oval-icon4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.symbol12 {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 7px);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  font-family: var(--font-sf-pro);
+  color: var(--color-white);
+  text-align: left;
+}
+.close-button4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.44rem;
+  width: 1.88rem;
+  height: 1.88rem;
+  opacity: 0;
+}
+.close-button4.animate {
+  animation: 1s ease 0s 1 normal forwards roll-in-left;
+}
+.explainopen {
+  position: relative;
+  background-color: var(--color-darkslategray);
+  width: 26.88rem;
+  height: 100%;
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-sf-pro);
+}
+.explainopen.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
