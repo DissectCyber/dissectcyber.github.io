@@ -23,16 +23,14 @@ body {
   --font-size-mid: 1.06rem;
   --font-size-base: 1rem;
   --font-size-2xs: 0.69rem;
-  --font-size-mini: 0.94rem;
+  --font-size-9xl: 1.75rem;
   --font-size-5xl: 1.5rem;
   --font-size-20xl: 2.44rem;
   --font-size-sm: 0.88rem;
-  --font-size-9xl: 1.75rem;
 
   /* Colors */
   --color-darkslategray: #363434;
   --color-dodgerblue: #0a84ff;
-  --color-gray-100: rgba(255, 255, 255, 0.25);
   --color-gray-200: rgba(0, 0, 0, 0);
   --color-gainsboro-100: rgba(217, 217, 217, 0.3);
   --color-white: #fff;

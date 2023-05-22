@@ -56,13 +56,7 @@
 
                       <div class="symbol">􀅾</div>
                     </div>
-                    <div class="drill-in-button">
-                      <div class="drill-in-button1">
-                        Everyone can make changes
-                      </div>
-                      <div class="div">􀆊</div>
-                    </div>
-                    <div class="title">Title</div>
+                    <div class="title">Article of interest</div>
                     <div class="activity-view-header-thumb">
                       <div class="base"></div>
                       <img
@@ -76,12 +70,6 @@
                         alt=""
                         src="./public/b9791ba956a0668623764f8b383f08843c2e42311@2x.png"
                       />
-                    </div>
-                    <div class="drill-in-button2">
-                      <div class="drill-in-button3">
-                        <div class="drill-in-button1">􀉬 Collaborate</div>
-                        <div class="div">􀆏</div>
-                      </div>
                     </div>
                   </div>
                   <div class="recent-contacts">
@@ -360,13 +348,13 @@
         </div>
         <b class="when-you-tap">When you tap COPY…</b>
         <button
-          class="close-button2"
+          class="close-button4"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon2" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon4" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol10">􀅾</div>
+          <div class="symbol12">􀅾</div>
         </button>
       </div>
     </div>
@@ -389,13 +377,13 @@
         />
 
         <button
-          class="close-button1"
+          class="close-button3"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon1" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon3" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol9">􀅾</div>
+          <div class="symbol11">􀅾</div>
         </button>
       </div>
     </div>
@@ -422,13 +410,13 @@
         </div>
         <b class="when-would-i1">When would I use OPEN?</b>
         <button
-          class="close-button4"
+          class="close-button2"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon4" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon2" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol12">􀅾</div>
+          <div class="symbol10">􀅾</div>
         </button>
       </div>
     </div>
@@ -445,13 +433,13 @@
         </div>
         <b class="when-would-i">When would I use DISMISS?</b>
         <button
-          class="close-button3"
+          class="close-button1"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon3" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon1" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol11">􀅾</div>
+          <div class="symbol9">􀅾</div>
         </button>
       </div>
     </div>
@@ -476,7 +464,7 @@
           }
         });
       }
-      
+
       var drawercloseButton = document.getElementById("drawercloseButton");
       if (drawercloseButton) {
         drawercloseButton.addEventListener("click", function (e) {
@@ -496,7 +484,7 @@
           }
         });
       }
-      
+
       var drawercloseButton = document.getElementById("drawercloseButton");
       if (drawercloseButton) {
         drawercloseButton.addEventListener("click", function (e) {
@@ -516,7 +504,7 @@
           }
         });
       }
-      
+
       var drawercloseButton = document.getElementById("drawercloseButton");
       if (drawercloseButton) {
         drawercloseButton.addEventListener("click", function (e) {
@@ -536,7 +524,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -552,11 +540,11 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      
+
       var actionSheetsActionDark = document.getElementById("actionSheetsActionDark");
       if (actionSheetsActionDark) {
         actionSheetsActionDark.addEventListener("click", function () {
@@ -571,7 +559,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -585,7 +573,7 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var actionSheetsActionDark1 = document.getElementById(
         "actionSheetsActionDark1"
       );
@@ -602,7 +590,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -616,7 +604,7 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var actionSheetsActionDark2 = document.getElementById(
         "actionSheetsActionDark2"
       );
@@ -633,7 +621,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -647,7 +635,7 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      
+
       var actionSheetsCancelButton = document.getElementById(
         "actionSheetsCancelButton"
       );
@@ -664,7 +652,7 @@
             drawerOverlayStyle.justifyContent = "";
           }
           drawerOverlay.setAttribute("closable", "");
-      
+
           var onClick =
             drawerOverlay.onClick ||
             function (e) {
@@ -678,6 +666,6 @@
           drawerOverlay.addEventListener("click", onClick);
         });
       }
-      </script>
+    </script>
   </body>
 </html>

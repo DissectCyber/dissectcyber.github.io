@@ -39,7 +39,7 @@
   left: 3rem;
   display: inline-block;
 }
-.oval-icon1,
+.oval-icon3,
 .screen-shot-2023-05-21-at-139 {
   position: absolute;
   width: 100%;
@@ -53,14 +53,14 @@
   height: 8rem;
   object-fit: cover;
 }
-.oval-icon1 {
+.oval-icon3 {
   height: 100%;
   top: 0;
   bottom: 0;
   border-radius: 50%;
   max-height: 100%;
 }
-.symbol9 {
+.symbol11 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
@@ -70,7 +70,7 @@
   color: var(--color-white);
   text-align: left;
 }
-.close-button1 {
+.close-button3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -82,7 +82,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button1.animate {
+.close-button3.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explainshare {

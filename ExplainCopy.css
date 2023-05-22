@@ -1007,7 +1007,7 @@
   font-size: var(--font-size-xl);
   text-align: center;
 }
-.oval-icon2 {
+.oval-icon4 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1020,7 +1020,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.symbol10 {
+.symbol12 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
@@ -1030,7 +1030,7 @@
   color: var(--color-white);
   text-align: left;
 }
-.close-button2 {
+.close-button4 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -1042,7 +1042,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button2.animate {
+.close-button4.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explaincopy {

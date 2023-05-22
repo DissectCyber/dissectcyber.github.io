@@ -51,13 +51,13 @@
       </div>
       <b class="when-would-i">When would I use DISMISS?</b>
       <button
-        class="close-button3"
+        class="close-button1"
         id="drawercloseButton"
         data-animate-on-scroll
       >
-        <img class="oval-icon3" alt="" src="./public/oval1.svg" />
+        <img class="oval-icon1" alt="" src="./public/oval1.svg" />
 
-        <div class="symbol11">􀅾</div>
+        <div class="symbol9">􀅾</div>
       </button>
     </div>
 
@@ -81,7 +81,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -97,10 +97,10 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+    </script>
   </body>
 </html>

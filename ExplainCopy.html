@@ -326,49 +326,16 @@
           <div class="label21">Dismiss</div>
         </button>
       </div>
-    </div>
+      <b class="when-you-tap">When you tap COPY…</b>
+      <button
+        class="close-button4"
+        id="drawercloseButton"
+        data-animate-on-scroll
+      >
+        <img class="oval-icon4" alt="" src="./public/oval1.svg" />
 
-    <div id="explainCopy" class="popup-overlay" style="display: none">
-      <div class="explaincopy" data-animate-on-scroll>
-        <div class="the-website-address">
-          The website address you shared to Gnat Cleaner is copied to your
-          clipboard.
-        </div>
-        <b class="why-would-i">Why would I use COPY?</b>
-        <div class="you-might-be-container">
-          <p class="you-might-be">
-            You might be writing a document and want to paste in a clean link
-            without trackers.
-          </p>
-          <p class="you-might-be">&nbsp;</p>
-          <p class="you-might-be">
-            Or you might want to paste the link into a personal list you keep in
-            something like Notes.
-          </p>
-          <p class="you-might-be">&nbsp;</p>
-          <p class="you-might-be">
-            Or you might prefer COPY, and then paste - instead of using the
-            sharing menu.
-          </p>
-          <p class="you-might-be">&nbsp;</p>
-          <p class="you-might-be">
-            <b
-              >You should feel free to do whatever is easy for you, and we
-              support that.</b
-            >
-          </p>
-        </div>
-        <b class="when-you-tap">When you tap COPY…</b>
-        <button
-          class="close-button2"
-          id="drawercloseButton"
-          data-animate-on-scroll
-        >
-          <img class="oval-icon2" alt="" src="./public/oval1.svg" />
-
-          <div class="symbol10">􀅾</div>
-        </button>
-      </div>
+        <div class="symbol12">􀅾</div>
+      </button>
     </div>
 
     <div id="explainShare" class="popup-overlay" style="display: none">
@@ -477,66 +444,6 @@
         });
       }
 
-      var drawercloseButton = document.getElementById("drawercloseButton");
-      if (drawercloseButton) {
-        drawercloseButton.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-
-      var drawercloseButton = document.getElementById("drawercloseButton");
-      if (drawercloseButton) {
-        drawercloseButton.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-
-      var drawercloseButton = document.getElementById("drawercloseButton");
-      if (drawercloseButton) {
-        drawercloseButton.addEventListener("click", function (e) {
-          var popup = e.currentTarget.parentNode;
-          function isOverlay(node) {
-            return !!(
-              node &&
-              node.classList &&
-              node.classList.contains("popup-overlay")
-            );
-          }
-          while (popup && !isOverlay(popup)) {
-            popup = popup.parentNode;
-          }
-          if (isOverlay(popup)) {
-            popup.style.display = "none";
-          }
-        });
-      }
-
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -555,128 +462,6 @@
 
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
-      }
-
-      var actionSheetsActionDark = document.getElementById("actionSheetsActionDark");
-      if (actionSheetsActionDark) {
-        actionSheetsActionDark.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("explainCopy");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            drawerOverlayStyle.alignItems = "flex-start";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-
-      var actionSheetsActionDark1 = document.getElementById(
-        "actionSheetsActionDark1"
-      );
-      if (actionSheetsActionDark1) {
-        actionSheetsActionDark1.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("explainShare");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            drawerOverlayStyle.alignItems = "flex-start";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-
-      var actionSheetsActionDark2 = document.getElementById(
-        "actionSheetsActionDark2"
-      );
-      if (actionSheetsActionDark2) {
-        actionSheetsActionDark2.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("explainOpen");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            drawerOverlayStyle.alignItems = "flex-start";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
-      }
-
-      var actionSheetsCancelButton = document.getElementById(
-        "actionSheetsCancelButton"
-      );
-      if (actionSheetsCancelButton) {
-        actionSheetsCancelButton.addEventListener("click", function () {
-          var drawerOverlay = document.getElementById("explainDismiss");
-          if (!drawerOverlay) return;
-          var drawerOverlayStyle = drawerOverlay.style;
-          if (drawerOverlayStyle) {
-            drawerOverlayStyle.display = "flex";
-            drawerOverlayStyle.zIndex = 99;
-            drawerOverlayStyle.backgroundColor = "rgba(0, 0, 0, 0.8)";
-            drawerOverlayStyle.alignItems = "flex-start";
-            drawerOverlayStyle.justifyContent = "";
-          }
-          drawerOverlay.setAttribute("closable", "");
-
-          var onClick =
-            drawerOverlay.onClick ||
-            function (e) {
-              if (
-                e.target === drawerOverlay &&
-                drawerOverlay.hasAttribute("closable")
-              ) {
-                drawerOverlayStyle.display = "none";
-              }
-            };
-          drawerOverlay.addEventListener("click", onClick);
-        });
       }
     </script>
   </body>

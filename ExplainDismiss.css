@@ -48,7 +48,7 @@
   font-family: var(--font-helvetica-neue);
   text-align: center;
 }
-.oval-icon3 {
+.oval-icon1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,7 +61,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.symbol11 {
+.symbol9 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
@@ -71,7 +71,7 @@
   color: var(--color-white);
   text-align: left;
 }
-.close-button3 {
+.close-button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -83,7 +83,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button3.animate {
+.close-button1.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explaindismiss {

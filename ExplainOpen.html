@@ -60,13 +60,13 @@
       </div>
       <b class="when-would-i1">When would I use OPEN?</b>
       <button
-        class="close-button4"
+        class="close-button2"
         id="drawercloseButton"
         data-animate-on-scroll
       >
-        <img class="oval-icon4" alt="" src="./public/oval1.svg" />
+        <img class="oval-icon2" alt="" src="./public/oval1.svg" />
 
-        <div class="symbol12">􀅾</div>
+        <div class="symbol10">􀅾</div>
       </button>
     </div>
 
@@ -90,7 +90,7 @@
           }
         });
       }
-      
+
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -106,10 +106,10 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+    </script>
   </body>
 </html>
