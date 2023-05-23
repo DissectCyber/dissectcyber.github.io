@@ -22,11 +22,12 @@
                   <div class="activity-view-header-dark">
                     <div class="background1"></div>
                     <div class="seperator"></div>
-                    <div class="close-button">
-                      <img class="oval-icon" alt="" src="./public/oval.svg" />
+                    <img
+                      class="close-button-icon"
+                      alt=""
+                      src="./public/oval.svg"
+                    />
 
-                      <div class="symbol">􀅾</div>
-                    </div>
                     <div class="title">Article of interest</div>
                     <div class="activity-view-header-thumb">
                       <div class="base"></div>
@@ -180,7 +181,7 @@
                     <div class="action1">
                       <div class="frame"></div>
                       <div class="separator"></div>
-                      <div class="symbol1">􀉁</div>
+                      <div class="symbol">􀉁</div>
                       <div class="label10">Copy</div>
                     </div>
                   </div>
@@ -188,31 +189,31 @@
                     <div class="action3">
                       <div class="frame1"></div>
                       <div class="separator1"></div>
-                      <div class="symbol2">􀖆</div>
+                      <div class="symbol1">􀖆</div>
                       <div class="label11">Add to Reading List</div>
                     </div>
                     <div class="action3">
                       <div class="frame1"></div>
                       <div class="separator1"></div>
-                      <div class="symbol3">􀉚</div>
+                      <div class="symbol2">􀉚</div>
                       <div class="label11">Add Bookmark</div>
                     </div>
                     <div class="action3">
                       <div class="frame1"></div>
                       <div class="separator1"></div>
-                      <div class="symbol3">􀋂</div>
+                      <div class="symbol2">􀋂</div>
                       <div class="label11">Add to Favorites</div>
                     </div>
                     <div class="action3">
                       <div class="frame1"></div>
                       <div class="separator1"></div>
-                      <div class="symbol5">􀊫</div>
+                      <div class="symbol4">􀊫</div>
                       <div class="label11">Find on Page</div>
                     </div>
                     <div class="action3">
                       <div class="frame5"></div>
                       <div class="separator5"></div>
-                      <div class="symbol6">􀑍</div>
+                      <div class="symbol5">􀑍</div>
                       <div class="label11">Add to Home Screen</div>
                     </div>
                     <div class="platter1"></div>
@@ -221,13 +222,13 @@
                     <div class="action3">
                       <div class="frame1"></div>
                       <div class="separator1"></div>
-                      <div class="symbol7">􀉥</div>
+                      <div class="symbol6">􀉥</div>
                       <div class="label11">Markup</div>
                     </div>
                     <div class="action10">
                       <div class="frame7"></div>
                       <div class="separator7"></div>
-                      <div class="symbol8">􀎚</div>
+                      <div class="symbol7">􀎚</div>
                       <div class="label17">Print</div>
                     </div>
                     <div class="platter2"></div>
@@ -242,9 +243,7 @@
       <div class="action-sheets-menu-option-">
         <div class="action-sheets-action">
           <div class="action-sheets-header-dark">
-            <header class="action-sheets-header">
-              <b class="title1">GNAT Cleaner Link</b>
-            </header>
+            <header class="action-sheets-header"></header>
           </div>
           <button class="action-sheets-action-dark" id="actionSheetsActionDark">
             <div class="frame8"></div>
@@ -285,6 +284,11 @@
           <div class="label21">Dismiss</div>
         </button>
       </div>
+      <button
+        class="window-close"
+        id="windowClose"
+        data-animate-on-scroll
+      ></button>
     </div>
 
     <div id="explainCopy" class="popup-overlay" style="display: none">
@@ -319,13 +323,12 @@
         </div>
         <b class="when-you-tap">When you tap COPY…</b>
         <button
-          class="close-button1"
+          class="close-button2"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon1" alt="" src="./public/oval1.svg" />
-
           <div class="symbol9">􀅾</div>
+          <img class="oval-icon2" alt="" src="./public/oval1.svg" />
         </button>
       </div>
     </div>
@@ -347,15 +350,11 @@
           src="./public/screen-shot-20230521-at-13904-pm@2x.png"
         />
 
-        <button
-          class="close-button2"
-          id="drawercloseButton"
-          data-animate-on-scroll
-        >
-          <img class="oval-icon2" alt="" src="./public/oval1.svg" />
-
-          <div class="symbol10">􀅾</div>
-        </button>
+        <img
+          class="close-button-icon1"
+          alt=""
+          src="./public/close-button.svg"
+        />
       </div>
     </div>
 
@@ -379,15 +378,15 @@
           <p class="a-friend-sends">Now you can OPEN the clean link.</p>
           <p class="a-friend-sends">&nbsp;</p>
         </div>
-        <b class="when-would-i">When would I use OPEN?</b>
+        <b class="when-would-i1">When would I use OPEN?</b>
         <button
-          class="close-button3"
+          class="close-button1"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon3" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon1" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol11">􀅾</div>
+          <button class="window-close1" id="drawerwindowClose"></button>
         </button>
       </div>
     </div>
@@ -402,15 +401,15 @@
           Let’s say you changed your mind and you don’t want to use the clean
           link right now. You just want to start over or do something different.
         </div>
-        <b class="when-would-i1">When would I use DISMISS?</b>
+        <b class="when-would-i">When would I use DISMISS?</b>
         <button
-          class="close-button4"
+          class="close-button"
           id="drawercloseButton"
           data-animate-on-scroll
         >
-          <img class="oval-icon4" alt="" src="./public/oval1.svg" />
+          <img class="oval-icon" alt="" src="./public/oval1.svg" />
 
-          <div class="symbol12">􀅾</div>
+          <div class="symbol8">􀅾</div>
         </button>
       </div>
     </div>
@@ -436,9 +435,9 @@
         });
       }
 
-      var drawercloseButton = document.getElementById("drawercloseButton");
-      if (drawercloseButton) {
-        drawercloseButton.addEventListener("click", function (e) {
+      var drawerwindowClose = document.getElementById("drawerwindowClose");
+      if (drawerwindowClose) {
+        drawerwindowClose.addEventListener("click", function (e) {
           var popup = e.currentTarget.parentNode;
           function isOverlay(node) {
             return !!(
@@ -494,26 +493,6 @@
             popup.style.display = "none";
           }
         });
-      }
-
-      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.15,
-        }
-      );
-
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
       }
 
       var actionSheetsActionDark = document.getElementById("actionSheetsActionDark");

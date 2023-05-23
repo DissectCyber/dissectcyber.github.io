@@ -40,14 +40,14 @@
   display: inline-block;
   height: 9.38rem;
 }
-.when-would-i1 {
+.when-would-i {
   position: absolute;
   top: calc(50% - 16.5px);
   left: 1.69rem;
   font-size: var(--font-size-9xl);
   text-align: center;
 }
-.oval-icon4 {
+.oval-icon {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -60,7 +60,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.symbol12 {
+.symbol8 {
   position: absolute;
   top: calc(50% - 9px);
   left: calc(50% - 7px);
@@ -70,7 +70,7 @@
   color: var(--color-white);
   text-align: left;
 }
-.close-button4 {
+.close-button {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -82,7 +82,7 @@
   height: 1.88rem;
   opacity: 0;
 }
-.close-button4.animate {
+.close-button.animate {
   animation: 1s ease 0s 1 normal forwards roll-in-left;
 }
 .explaindismiss {

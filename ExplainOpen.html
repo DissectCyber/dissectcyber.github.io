@@ -29,19 +29,39 @@
         <p class="a-friend-sends">Now you can OPEN the clean link.</p>
         <p class="a-friend-sends">&nbsp;</p>
       </div>
-      <b class="when-would-i">When would I use OPEN?</b>
+      <b class="when-would-i1">When would I use OPEN?</b>
       <button
-        class="close-button3"
+        class="close-button1"
         id="drawercloseButton"
         data-animate-on-scroll
       >
-        <img class="oval-icon3" alt="" src="./public/oval1.svg" />
+        <img class="oval-icon1" alt="" src="./public/oval1.svg" />
 
-        <div class="symbol11">􀅾</div>
+        <button class="window-close1" id="drawerwindowClose"></button>
       </button>
     </div>
 
     <script>
+      var drawerwindowClose = document.getElementById("drawerwindowClose");
+      if (drawerwindowClose) {
+        drawerwindowClose.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+
       var drawercloseButton = document.getElementById("drawercloseButton");
       if (drawercloseButton) {
         drawercloseButton.addEventListener("click", function (e) {
